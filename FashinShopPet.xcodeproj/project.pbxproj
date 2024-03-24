@@ -58,10 +58,18 @@
 		A96385EF2BB04F8C00707FB5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				A96385F02BB04FB700707FB5 /* Product.swift */,
-				A96385F22BB04FF200707FB5 /* ProductRepository.swift */,
+				A96385F52BB0746300707FB5 /* ProductRepository */,
 			);
 			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A96385F52BB0746300707FB5 /* ProductRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A96385F22BB04FF200707FB5 /* ProductRepository.swift */,
+				A96385F02BB04FB700707FB5 /* Product.swift */,
+			);
+			path = ProductRepository;
 			sourceTree = "<group>";
 		};
 		A96CDB2C2B77DC680023DB4E /* ProductViewController */ = {
