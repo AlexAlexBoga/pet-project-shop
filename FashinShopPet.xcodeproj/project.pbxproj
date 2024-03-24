@@ -11,6 +11,8 @@
 		A929FE9C2B72BEA8004912EA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929FE9B2B72BEA8004912EA /* Images.swift */; };
 		A96385F12BB04FB700707FB5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385F02BB04FB700707FB5 /* Product.swift */; };
 		A96385F32BB04FF200707FB5 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385F22BB04FF200707FB5 /* ProductRepository.swift */; };
+		A96385F92BB0758A00707FB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385F82BB0758A00707FB5 /* User.swift */; };
+		A96385FB2BB075AC00707FB5 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385FA2BB075AC00707FB5 /* UserRepository.swift */; };
 		A96CDB2E2B77DCBB0023DB4E /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96CDB2D2B77DCBB0023DB4E /* ProductViewController.swift */; };
 		A973F18D2B3F213A002DEFB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973F18C2B3F213A002DEFB8 /* AppDelegate.swift */; };
 		A973F18F2B3F213A002DEFB8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A973F18E2B3F213A002DEFB8 /* SceneDelegate.swift */; };
@@ -29,6 +31,8 @@
 		A929FE9B2B72BEA8004912EA /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		A96385F02BB04FB700707FB5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A96385F22BB04FF200707FB5 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
+		A96385F82BB0758A00707FB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A96385FA2BB075AC00707FB5 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		A96CDB2D2B77DCBB0023DB4E /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		A973F1892B3F213A002DEFB8 /* FashinShopPet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FashinShopPet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A973F18C2B3F213A002DEFB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +62,7 @@
 		A96385EF2BB04F8C00707FB5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				A96385F72BB0755600707FB5 /* UserRepository */,
 				A96385F52BB0746300707FB5 /* ProductRepository */,
 			);
 			path = Repositories;
@@ -66,10 +71,19 @@
 		A96385F52BB0746300707FB5 /* ProductRepository */ = {
 			isa = PBXGroup;
 			children = (
-				A96385F22BB04FF200707FB5 /* ProductRepository.swift */,
 				A96385F02BB04FB700707FB5 /* Product.swift */,
+				A96385F22BB04FF200707FB5 /* ProductRepository.swift */,
 			);
 			path = ProductRepository;
+			sourceTree = "<group>";
+		};
+		A96385F72BB0755600707FB5 /* UserRepository */ = {
+			isa = PBXGroup;
+			children = (
+				A96385F82BB0758A00707FB5 /* User.swift */,
+				A96385FA2BB075AC00707FB5 /* UserRepository.swift */,
+			);
+			path = UserRepository;
 			sourceTree = "<group>";
 		};
 		A96CDB2C2B77DC680023DB4E /* ProductViewController */ = {
@@ -250,7 +264,9 @@
 				A929FE982B724E64004912EA /* MyCollectionViewCell.swift in Sources */,
 				A96CDB2E2B77DCBB0023DB4E /* ProductViewController.swift in Sources */,
 				A973F1912B3F213A002DEFB8 /* FirstViewController.swift in Sources */,
+				A96385F92BB0758A00707FB5 /* User.swift in Sources */,
 				A96385F12BB04FB700707FB5 /* Product.swift in Sources */,
+				A96385FB2BB075AC00707FB5 /* UserRepository.swift in Sources */,
 				A9AABFC82B56C103008C4D5D /* CustomButton.swift in Sources */,
 				A9B783382B613F950013C81D /* ShopListViewController.swift in Sources */,
 				A973F18D2B3F213A002DEFB8 /* AppDelegate.swift in Sources */,
