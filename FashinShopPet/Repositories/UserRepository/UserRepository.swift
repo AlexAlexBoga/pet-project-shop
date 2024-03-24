@@ -18,7 +18,7 @@ class UserRepository{
         }
     }
     
-    public func getUser(_ user: User) {
+    public func setUser(_ user: User) {
         do {
             let encoder = JSONEncoder()
             let data = try encoder.encode(user)
