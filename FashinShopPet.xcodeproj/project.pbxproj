@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A929FE982B724E64004912EA /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929FE972B724E64004912EA /* MyCollectionViewCell.swift */; };
 		A929FE9C2B72BEA8004912EA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929FE9B2B72BEA8004912EA /* Images.swift */; };
+		A956424E2BC1B1DA0094D1C9 /* User+isEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A956424D2BC1B1DA0094D1C9 /* User+isEmpty.swift */; };
+		A95642502BC1C1B50094D1C9 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A956424F2BC1C1B50094D1C9 /* Screen.swift */; };
 		A96385F12BB04FB700707FB5 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385F02BB04FB700707FB5 /* Product.swift */; };
 		A96385F32BB04FF200707FB5 /* ProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385F22BB04FF200707FB5 /* ProductRepository.swift */; };
 		A96385F92BB0758A00707FB5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96385F82BB0758A00707FB5 /* User.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		A929FE972B724E64004912EA /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = ../../Design/MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A929FE9B2B72BEA8004912EA /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		A956424D2BC1B1DA0094D1C9 /* User+isEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+isEmpty.swift"; sourceTree = "<group>"; };
+		A956424F2BC1C1B50094D1C9 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		A96385F02BB04FB700707FB5 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		A96385F22BB04FF200707FB5 /* ProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRepository.swift; sourceTree = "<group>"; };
 		A96385F82BB0758A00707FB5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -63,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A956424C2BC1B18B0094D1C9 /* Extensios */ = {
+			isa = PBXGroup;
+			children = (
+				A956424D2BC1B1DA0094D1C9 /* User+isEmpty.swift */,
+			);
+			path = Extensios;
+			sourceTree = "<group>";
+		};
 		A96385EF2BB04F8C00707FB5 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +139,8 @@
 		A973F18B2B3F213A002DEFB8 /* FashinShopPet */ = {
 			isa = PBXGroup;
 			children = (
+				A956424F2BC1C1B50094D1C9 /* Screen.swift */,
+				A956424C2BC1B18B0094D1C9 /* Extensios */,
 				A96385EF2BB04F8C00707FB5 /* Repositories */,
 				A9EF4D582B45FC64002FD7C8 /* Support */,
 				A9B783352B61196A0013C81D /* UI */,
@@ -156,11 +170,11 @@
 		A9B783352B61196A0013C81D /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A9EF4D552B45FA8F002FD7C8 /* FirstViewController */,
+				A9AABFC92B59BE54008C4D5D /* SignUpViewController */,
+				A9EF4D5A2B46008F002FD7C8 /* SignInViewController */,
 				A96CDB2C2B77DC680023DB4E /* ProductViewController */,
 				A9B783362B611A410013C81D /* ShopListViewController */,
-				A9EF4D552B45FA8F002FD7C8 /* FirstViewController */,
-				A9EF4D5A2B46008F002FD7C8 /* SignInViewController */,
-				A9AABFC92B59BE54008C4D5D /* SignUpViewController */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -283,8 +297,10 @@
 				A96385FB2BB075AC00707FB5 /* UserRepository.swift in Sources */,
 				A9AABFC82B56C103008C4D5D /* CustomButton.swift in Sources */,
 				A9B783382B613F950013C81D /* ShopListViewController.swift in Sources */,
+				A956424E2BC1B1DA0094D1C9 /* User+isEmpty.swift in Sources */,
 				A973F18D2B3F213A002DEFB8 /* AppDelegate.swift in Sources */,
 				A929FE9C2B72BEA8004912EA /* Images.swift in Sources */,
+				A95642502BC1C1B50094D1C9 /* Screen.swift in Sources */,
 				A973F18F2B3F213A002DEFB8 /* SceneDelegate.swift in Sources */,
 				A96386002BB08B4B00707FB5 /* CartRepository.swift in Sources */,
 				A9AABFC62B56C076008C4D5D /* CustomTextField.swift in Sources */,
