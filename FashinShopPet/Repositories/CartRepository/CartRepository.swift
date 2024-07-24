@@ -7,7 +7,7 @@
 
 import Foundation
 
-@available(iOS 16.0, *)
+
 
 class CartRepository {
     private let jsonUrl = try! FileManager.default.url(for: .applicationSupportDirectory, in: .allDomainsMask, appropriateFor: nil, create: true) .appending(path: "cart.json")

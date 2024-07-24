@@ -2,7 +2,7 @@
 
 import Foundation
 
-@available(iOS 16.0, *)
+
 class ProductRepository{
     
     private let productsJsonUrl: URL = try! FileManager.default.url(for: .allApplicationsDirectory, in: .allDomainsMask, appropriateFor: nil, create: true) .appending(path: "product.json")

@@ -1,5 +1,5 @@
 //
-//  ShopListViewController.swift
+//  ShopListScreen.swift
 //  FashinShopPet
 //
 //  Created by Александр Богачев on 24.01.24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShopListViewController: UIViewController {
+class ShopListScreen: UIViewController {
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -168,7 +168,7 @@ class ShopListViewController: UIViewController {
     
     @objc
     func startedButtonTap() {
-        let secondViewController = SignInViewController()
+        let secondViewController = SignInScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
     
@@ -234,7 +234,7 @@ class ShopListViewController: UIViewController {
 }
 
 
-extension ShopListViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ShopListScreen: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return imageArray.count
@@ -258,7 +258,7 @@ extension ShopListViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        let secondViewController = ProductViewController()
+        let secondViewController = ProductScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
         
         print("Ячейка \(indexPath.item) выбрана")

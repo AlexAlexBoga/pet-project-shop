@@ -1,5 +1,5 @@
 //
-//  SignInViewController.swift
+//  SignInScreen.swift
 //  FashinShopPet
 //
 //  Created by Александр Богачев on 3.01.24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class SignInScreen: UIViewController {
     
     lazy var stackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [userNameTextField,
@@ -64,7 +64,7 @@ class SignInViewController: UIViewController {
     }
     
     @objc func nextButtonTapped() {
-        let signUpViewController = SignUpViewController()
+        let signUpViewController = LoginScreen()
         navigationController?.pushViewController(signUpViewController, animated: true)
     }
     
@@ -163,7 +163,7 @@ class SignInViewController: UIViewController {
     
     @objc
     func startedButtonTap1() {
-        let secondViewController = ShopListViewController()
+        let secondViewController = ShopListScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
     
@@ -181,7 +181,7 @@ class SignInViewController: UIViewController {
     }
     
     @objc func signUpButtonTapped() {
-        let secondViewController = SignUpViewController()
+        let secondViewController = LoginScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
     

@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  MainScreen.swift
 //  FashinShopPet
 //
 //  Created by Александр Богачев on 29.12.23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class MainScreen: UIViewController {
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
@@ -70,7 +70,7 @@ class FirstViewController: UIViewController {
     
     @objc
     func startedButtonTap() {
-        let secondViewController = SignInViewController()
+        let secondViewController = SignInScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
     

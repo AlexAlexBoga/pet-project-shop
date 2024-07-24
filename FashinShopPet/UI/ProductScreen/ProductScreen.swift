@@ -1,5 +1,5 @@
 //
-//  ProductViewController.swift
+//  ProductScreen.swift
 //  FashinShopPet
 //
 //  Created by Александр Богачев on 10.02.24.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProductViewController: UIViewController {
+class ProductScreen: UIViewController {
     
     let productImage: UIImageView = {
         let image = UIImageView()
