@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A905E8B92C5137F200FF3125 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905E8B82C5137F200FF3125 /* LoginPresenter.swift */; };
 		A905E8BB2C517E8000FF3125 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905E8BA2C517E8000FF3125 /* Screen.swift */; };
+		A905E8BD2C522F9600FF3125 /* ShopListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A905E8BC2C522F9600FF3125 /* ShopListPresenter.swift */; };
 		A929FE982B724E64004912EA /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929FE972B724E64004912EA /* MyCollectionViewCell.swift */; };
 		A929FE9C2B72BEA8004912EA /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = A929FE9B2B72BEA8004912EA /* Images.swift */; };
 		A956424E2BC1B1DA0094D1C9 /* User+isEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A956424D2BC1B1DA0094D1C9 /* User+isEmpty.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		A905E8B82C5137F200FF3125 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		A905E8BA2C517E8000FF3125 /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		A905E8BC2C522F9600FF3125 /* ShopListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopListPresenter.swift; sourceTree = "<group>"; };
 		A929FE972B724E64004912EA /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyCollectionViewCell.swift; path = ../../Design/MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		A929FE9B2B72BEA8004912EA /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		A956424D2BC1B1DA0094D1C9 /* User+isEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+isEmpty.swift"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				A9B783372B613F950013C81D /* ShopListScreen.swift */,
 				A929FE972B724E64004912EA /* MyCollectionViewCell.swift */,
 				A929FE9B2B72BEA8004912EA /* Images.swift */,
+				A905E8BC2C522F9600FF3125 /* ShopListPresenter.swift */,
 			);
 			path = ShopListScreen;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				A96385FB2BB075AC00707FB5 /* UserRepository.swift in Sources */,
 				A9AABFC82B56C103008C4D5D /* CustomButton.swift in Sources */,
 				A9B783382B613F950013C81D /* ShopListScreen.swift in Sources */,
+				A905E8BD2C522F9600FF3125 /* ShopListPresenter.swift in Sources */,
 				A956424E2BC1B1DA0094D1C9 /* User+isEmpty.swift in Sources */,
 				A973F18D2B3F213A002DEFB8 /* AppDelegate.swift in Sources */,
 				A905E8BB2C517E8000FF3125 /* Screen.swift in Sources */,

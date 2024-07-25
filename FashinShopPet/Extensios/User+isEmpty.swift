@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 extension User {
     var isEmpty: Bool {
         name.isEmpty || password.isEmpty

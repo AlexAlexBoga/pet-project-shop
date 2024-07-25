@@ -39,8 +39,7 @@ class LoginScreen: UIViewController {
     private let buttonSignUp = UIButton()
     
     private let userRepository = UserRepository()
-    lazy var loginPresenter = LoginPresenter(userRepository: userRepository)
-    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -199,7 +198,7 @@ class LoginScreen: UIViewController {
         print ("signUpButtonTapp")
         print(name, password, confirmPassword)
         
-        loginPresenter.login(name: name, password: password, confirmPassword: confirmPassword)
+//        loginPresenter.login(name: name, password: password, confirmPassword: confirmPassword)
         let secondViewController = ShopListScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
