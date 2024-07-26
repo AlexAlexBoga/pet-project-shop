@@ -7,23 +7,17 @@
 
 import Foundation
 
-protocol LoginScreenView: Screen<LoginPresenter> {
-//    func goToHomeScreen() -> any ShopListScreenView
-    func showLoginError()
+protocol  LoginPresenterProtocol {
+    func login(name: String, password: String, confirmPassword: String)
 }
 
 class LoginPresenter {
     
-    let userRepository: UserRepository
-    private weak var view: (any LoginScreenView)?
+    private let userRepository: UserRepository
     
-    init(view: any LoginScreenView, userRepository: UserRepository) {
-        self.view = view
+    init(userRepository: UserRepository) {
         self.userRepository = userRepository
     }
-    
-    
-    
     
     public func login(name: String, password: String, confirmPassword: String) {
         if name.count > 0 && password.count > 0 && password == confirmPassword {
@@ -31,10 +25,6 @@ class LoginPresenter {
             print("Login OK")
         } else {
             print("Username or password is wrong, can not login")
-            
-           
         }
     }
-
-    
 }

@@ -9,6 +9,8 @@ import UIKit
 
 class SignInScreen: UIViewController {
     
+    private var router: AppRouterProtocol?
+    
     lazy var stackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [userNameTextField,
                                                   passwordTextField,
@@ -32,6 +34,14 @@ class SignInScreen: UIViewController {
     private let signInButton = UIButton()
     private let signUpButton = UIButton()
     
+    init(router: AppRouterProtocol) {
+        self.router = router
+        super .init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,19 +63,10 @@ class SignInScreen: UIViewController {
         signUpButtonSetup()
         userNameConfig()
         passwordConfig()
-        
-        title = "Sign In"
-        let nextButton = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextButtonTapped))
-        navigationItem.rightBarButtonItem = nextButton
     }
     
     @objc func backgroundTapped(_ sender: UITapGestureRecognizer) {
         view.endEditing(false)
-    }
-    
-    @objc func nextButtonTapped() {
-        let signUpViewController = LoginScreen()
-        navigationController?.pushViewController(signUpViewController, animated: true)
     }
     
     private func userNameConfig() {
@@ -149,7 +150,7 @@ class SignInScreen: UIViewController {
         signInButton.titleLabel?.font = UIFont.systemFont(ofSize: 26)
         signInButton.backgroundColor = .black
         signInButton.layer.cornerRadius = 25
-        signInButton.addTarget(self, action: #selector(startedButtonTap1), for: .primaryActionTriggered)
+        signInButton.addTarget(self, action: #selector(signInButtonTapped), for: .primaryActionTriggered)
         signInButton.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(signInButton)
         
@@ -162,9 +163,8 @@ class SignInScreen: UIViewController {
     }
     
     @objc
-    func startedButtonTap1() {
-        let secondViewController = ShopListScreen()
-        navigationController?.pushViewController(secondViewController, animated: true)
+    func signInButtonTapped() {
+        router?.showShopListScreen(from: self)
     }
     
     private func signUpButtonSetup() {
@@ -181,8 +181,7 @@ class SignInScreen: UIViewController {
     }
     
     @objc func signUpButtonTapped() {
-        let secondViewController = LoginScreen()
-        navigationController?.pushViewController(secondViewController, animated: true)
+        router?.showMainScreen(from: self)
     }
     
     private func setupConstraints() {

@@ -9,6 +9,17 @@ import UIKit
 
 class MainScreen: UIViewController {
     
+    private var router: AppRouterProtocol?
+    
+    init(router: AppRouterProtocol? = nil) {
+        self.router = router
+        super .init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return .portrait
     }
@@ -70,9 +81,7 @@ class MainScreen: UIViewController {
     
     @objc
     func startedButtonTap() {
-        let secondViewController = SignInScreen()
-        navigationController?.pushViewController(secondViewController, animated: true)
+        router?.showSingInScreen(from: self)
     }
-    
 }
 
