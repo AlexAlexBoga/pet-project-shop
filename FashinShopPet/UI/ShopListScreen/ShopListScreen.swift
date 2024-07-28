@@ -168,7 +168,8 @@ class ShopListScreen: UIViewController {
     
     @objc
     func startedButtonTap() {
-        let secondViewController = SignInScreen()
+        
+        let secondViewController = SignInScreen(router: (any AppRouterProtocol).self as! AppRouterProtocol)
         navigationController?.pushViewController(secondViewController, animated: true)
     }
     
@@ -232,7 +233,6 @@ class ShopListScreen: UIViewController {
         print("Socks Tapped")
     }
 }
-
 
 extension ShopListScreen: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     

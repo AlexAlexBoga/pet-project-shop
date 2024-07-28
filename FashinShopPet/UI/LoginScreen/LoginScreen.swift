@@ -9,10 +9,19 @@ import UIKit
 
 class LoginScreen: UIViewController {
     
+    private var presenter: LoginPresenterProtocol
+    
+    init(presenter: LoginPresenterProtocol) {
+        self.presenter = presenter
+        super .init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     private let scrollView = UIScrollView()
     private let contentView = UIView()
-    
-   
     
     lazy var stackView: UIStackView = {
         let view = UIStackView(arrangedSubviews: [userNameTextField,
@@ -37,9 +46,6 @@ class LoginScreen: UIViewController {
     private let passwordNameTextField = CustomTextField()
     private let confirmPasswordTextField = CustomTextField()
     private let buttonSignUp = UIButton()
-    
-    private let userRepository = UserRepository()
-    lazy var loginPresenter = LoginPresenter(userRepository: userRepository)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -160,7 +166,6 @@ class LoginScreen: UIViewController {
             pleaseLable.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 43),
             pleaseLable.topAnchor.constraint(equalTo: createLable.bottomAnchor),
         ])
-        
     }
     
     private func buttonSignUpSetting() {
@@ -199,7 +204,7 @@ class LoginScreen: UIViewController {
         print ("signUpButtonTapp")
         print(name, password, confirmPassword)
         
-        loginPresenter.login(name: name, password: password, confirmPassword: confirmPassword)
+        //        loginPresenter.login(name: name, password: password, confirmPassword: confirmPassword)
         let secondViewController = ShopListScreen()
         navigationController?.pushViewController(secondViewController, animated: true)
     }
@@ -233,5 +238,4 @@ class LoginScreen: UIViewController {
         }
     }
 }
-
 
